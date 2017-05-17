@@ -32,6 +32,8 @@
 		C22CFF151ECC24ED008444EA /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22CFF141ECC24ED008444EA /* Wind.swift */; };
 		C22CFF171ECC250A008444EA /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22CFF161ECC250A008444EA /* WeatherData.swift */; };
 		C2DE853C1ECC326C00CE0951 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DE853B1ECC326C00CE0951 /* Home.storyboard */; };
+		C2DE853F1ECC39CE00CE0951 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE853E1ECC39CE00CE0951 /* RootRouter.swift */; };
+		C2DE85411ECC39DC00CE0951 /* RootProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE85401ECC39DC00CE0951 /* RootProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		C22CFF141ECC24ED008444EA /* Wind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
 		C22CFF161ECC250A008444EA /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		C2DE853B1ECC326C00CE0951 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		C2DE853E1ECC39CE00CE0951 /* RootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		C2DE85401ECC39DC00CE0951 /* RootProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootProtocol.swift; sourceTree = "<group>"; };
 		CF4DC3B771A3ED4D383202C1 /* Pods-Weatherman.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weatherman.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Weatherman/Pods-Weatherman.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -188,6 +192,7 @@
 		C22CFEED1ECC199F008444EA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C2DE853D1ECC394000CE0951 /* Root */,
 				C22CFEF11ECC1EB2008444EA /* Home */,
 			);
 			name = Modules;
@@ -302,6 +307,15 @@
 			children = (
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		C2DE853D1ECC394000CE0951 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				C2DE853E1ECC39CE00CE0951 /* RootRouter.swift */,
+				C2DE85401ECC39DC00CE0951 /* RootProtocol.swift */,
+			);
+			name = Root;
 			sourceTree = "<group>";
 		};
 		D8A9C7510113FAAC5C6139C4 /* Frameworks */ = {
@@ -582,10 +596,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2DE85411ECC39DC00CE0951 /* RootProtocol.swift in Sources */,
 				C22CFEFC1ECC1F3C008444EA /* SessionManagerProtocol.swift in Sources */,
 				C22CFEFA1ECC1F2F008444EA /* EndpointProtocol.swift in Sources */,
 				C22CFF091ECC2006008444EA /* APIManager.swift in Sources */,
 				C22CFF0B1ECC23C1008444EA /* Clouds.swift in Sources */,
+				C2DE853F1ECC39CE00CE0951 /* RootRouter.swift in Sources */,
 				C22CFF131ECC24E4008444EA /* Weather.swift in Sources */,
 				C22CFEF71ECC1F02008444EA /* APIResult.swift in Sources */,
 				C22CFF071ECC1FED008444EA /* Globlas.swift in Sources */,
@@ -748,7 +764,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Weatherman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.subodhjena.Weatherman;
+				PRODUCT_BUNDLE_IDENTIFIER = com.subodhjena.weatherman;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -762,7 +778,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Weatherman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.subodhjena.Weatherman;
+				PRODUCT_BUNDLE_IDENTIFIER = com.subodhjena.weatherman;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
