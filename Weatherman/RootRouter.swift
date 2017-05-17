@@ -11,9 +11,9 @@ import UIKit
 
 class RootRouter: RootProtocol {
     
-    func presentTasksScreen(in window: UIWindow) {
+    func presentHomeScreen(in window: UIWindow) {
        
         window.makeKeyAndVisible()
-        window.rootViewController = TasksRouter.assembleModule()
+        window.rootViewController = HomeRouter.assembleModule()
     }
 }

@@ -31,6 +31,16 @@
 		C22CFF131ECC24E4008444EA /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22CFF121ECC24E4008444EA /* Weather.swift */; };
 		C22CFF151ECC24ED008444EA /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22CFF141ECC24ED008444EA /* Wind.swift */; };
 		C22CFF171ECC250A008444EA /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22CFF161ECC250A008444EA /* WeatherData.swift */; };
+		C22DF93E1ECC9FC500C12259 /* HomeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DF93D1ECC9FC500C12259 /* HomeViewProtocol.swift */; };
+		C22DF9411ECC9FFF00C12259 /* IndicatableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DF9401ECC9FFF00C12259 /* IndicatableViewProtocol.swift */; };
+		C22DF9441ECCA02E00C12259 /* IndicatableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DF9431ECCA02E00C12259 /* IndicatableView.swift */; };
+		C22DF9461ECCA09900C12259 /* HomePresentationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DF9451ECCA09900C12259 /* HomePresentationProtocol.swift */; };
+		C22DF9481ECCA0D600C12259 /* HomeInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DF9471ECCA0D600C12259 /* HomeInteractorInput.swift */; };
+		C22DF94A1ECCA0F900C12259 /* HomeInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DF9491ECCA0F900C12259 /* HomeInteractorOutput.swift */; };
+		C22DF94C1ECCA15700C12259 /* HomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DF94B1ECCA15700C12259 /* HomeWireframe.swift */; };
+		C22DF94E1ECCA24500C12259 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DF94D1ECCA24500C12259 /* HomePresenter.swift */; };
+		C22DF9501ECCA36B00C12259 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DF94F1ECCA36B00C12259 /* HomeInteractor.swift */; };
+		C22DF9521ECCA40200C12259 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DF9511ECCA40200C12259 /* HomeRouter.swift */; };
 		C2DE853C1ECC326C00CE0951 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DE853B1ECC326C00CE0951 /* Home.storyboard */; };
 		C2DE853F1ECC39CE00CE0951 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE853E1ECC39CE00CE0951 /* RootRouter.swift */; };
 		C2DE85411ECC39DC00CE0951 /* RootProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE85401ECC39DC00CE0951 /* RootProtocol.swift */; };
@@ -89,6 +99,16 @@
 		C22CFF121ECC24E4008444EA /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		C22CFF141ECC24ED008444EA /* Wind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
 		C22CFF161ECC250A008444EA /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		C22DF93D1ECC9FC500C12259 /* HomeViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewProtocol.swift; sourceTree = "<group>"; };
+		C22DF9401ECC9FFF00C12259 /* IndicatableViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatableViewProtocol.swift; sourceTree = "<group>"; };
+		C22DF9431ECCA02E00C12259 /* IndicatableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatableView.swift; sourceTree = "<group>"; };
+		C22DF9451ECCA09900C12259 /* HomePresentationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresentationProtocol.swift; sourceTree = "<group>"; };
+		C22DF9471ECCA0D600C12259 /* HomeInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractorInput.swift; sourceTree = "<group>"; };
+		C22DF9491ECCA0F900C12259 /* HomeInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractorOutput.swift; sourceTree = "<group>"; };
+		C22DF94B1ECCA15700C12259 /* HomeWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
+		C22DF94D1ECCA24500C12259 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		C22DF94F1ECCA36B00C12259 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		C22DF9511ECCA40200C12259 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		C2DE853B1ECC326C00CE0951 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C2DE853E1ECC39CE00CE0951 /* RootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		C2DE85401ECC39DC00CE0951 /* RootProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootProtocol.swift; sourceTree = "<group>"; };
@@ -161,6 +181,8 @@
 		C2178A551ECBEC9600BD7D86 /* Weatherman */ = {
 			isa = PBXGroup;
 			children = (
+				C22DF9421ECCA01D00C12259 /* Extensions */,
+				C22DF93F1ECC9FE600C12259 /* Protocols */,
 				C22CFF051ECC1FDB008444EA /* Utilities */,
 				C22CFEF51ECC1EDB008444EA /* Models */,
 				C22CFEF01ECC19BD008444EA /* Resources */,
@@ -281,9 +303,26 @@
 			name = Utilities;
 			sourceTree = "<group>";
 		};
+		C22DF93F1ECC9FE600C12259 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C22DF9401ECC9FFF00C12259 /* IndicatableViewProtocol.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		C22DF9421ECCA01D00C12259 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C22DF9431ECCA02E00C12259 /* IndicatableView.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		C2DE85371ECC322900CE0951 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				C22DF94F1ECCA36B00C12259 /* HomeInteractor.swift */,
 			);
 			name = Interactor;
 			sourceTree = "<group>";
@@ -291,6 +330,7 @@
 		C2DE85381ECC323200CE0951 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				C22DF9511ECCA40200C12259 /* HomeRouter.swift */,
 			);
 			name = Router;
 			sourceTree = "<group>";
@@ -298,6 +338,7 @@
 		C2DE85391ECC323700CE0951 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				C22DF94D1ECCA24500C12259 /* HomePresenter.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -305,6 +346,11 @@
 		C2DE853A1ECC324200CE0951 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				C22DF93D1ECC9FC500C12259 /* HomeViewProtocol.swift */,
+				C22DF9451ECCA09900C12259 /* HomePresentationProtocol.swift */,
+				C22DF9471ECCA0D600C12259 /* HomeInteractorInput.swift */,
+				C22DF9491ECCA0F900C12259 /* HomeInteractorOutput.swift */,
+				C22DF94B1ECCA15700C12259 /* HomeWireframe.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -596,8 +642,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C22DF9481ECCA0D600C12259 /* HomeInteractorInput.swift in Sources */,
 				C2DE85411ECC39DC00CE0951 /* RootProtocol.swift in Sources */,
+				C22DF9441ECCA02E00C12259 /* IndicatableView.swift in Sources */,
 				C22CFEFC1ECC1F3C008444EA /* SessionManagerProtocol.swift in Sources */,
+				C22DF9521ECCA40200C12259 /* HomeRouter.swift in Sources */,
 				C22CFEFA1ECC1F2F008444EA /* EndpointProtocol.swift in Sources */,
 				C22CFF091ECC2006008444EA /* APIManager.swift in Sources */,
 				C22CFF0B1ECC23C1008444EA /* Clouds.swift in Sources */,
@@ -606,15 +655,22 @@
 				C22CFEF71ECC1F02008444EA /* APIResult.swift in Sources */,
 				C22CFF071ECC1FED008444EA /* Globlas.swift in Sources */,
 				C22CFF151ECC24ED008444EA /* Wind.swift in Sources */,
+				C22DF9461ECCA09900C12259 /* HomePresentationProtocol.swift in Sources */,
+				C22DF94A1ECCA0F900C12259 /* HomeInteractorOutput.swift in Sources */,
 				C22CFF0F1ECC24C7008444EA /* Sys.swift in Sources */,
+				C22DF9411ECC9FFF00C12259 /* IndicatableViewProtocol.swift in Sources */,
 				C22CFF001ECC1F89008444EA /* Endpoints.swift in Sources */,
+				C22DF94C1ECCA15700C12259 /* HomeWireframe.swift in Sources */,
 				C2178A571ECBEC9600BD7D86 /* AppDelegate.swift in Sources */,
 				C22CFEFE1ECC1F64008444EA /* API.swift in Sources */,
 				C22CFF0D1ECC24B9008444EA /* Coord.swift in Sources */,
 				C22CFF171ECC250A008444EA /* WeatherData.swift in Sources */,
 				C22CFF041ECC1FC7008444EA /* SessionManager.swift in Sources */,
 				C22CFF111ECC24D9008444EA /* Main.swift in Sources */,
+				C22DF94E1ECCA24500C12259 /* HomePresenter.swift in Sources */,
 				C22CFEF31ECC1ECE008444EA /* HomeViewController.swift in Sources */,
+				C22DF93E1ECC9FC500C12259 /* HomeViewProtocol.swift in Sources */,
+				C22DF9501ECCA36B00C12259 /* HomeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

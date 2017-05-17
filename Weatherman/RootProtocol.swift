@@ -9,6 +9,6 @@
 import UIKit
 
 protocol RootProtocol: class {
-    func presentTasksScreen(in window: UIWindow)
+    func presentHomeScreen(in window: UIWindow)
 }
 
