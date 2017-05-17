@@ -8,6 +8,7 @@ target 'Weatherman' do
   # Pods for Weatherman
   pod 'SwiftyJSON', '~> 3.1'
   pod 'Alamofire', '~> 4.4'
+  pod 'APESuperHUD', '~> 1.1'
 
   target 'WeathermanTests' do
     inherit! :search_paths

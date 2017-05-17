@@ -8,15 +8,15 @@
 
 import Foundation
 import UIKit
-//import APESuperHUD
+import APESuperHUD
 
 extension IndicatableViewProtocol where Self: UIViewController {
     
     func showActivityIndicator() {
-        //APESuperHUD.showOrUpdateHUD(LoadingIndicatorType.standard, message: "Loading", presentingView: self.view)
+        APESuperHUD.showOrUpdateHUD(LoadingIndicatorType.standard, message: "", presentingView: self.view)
     }
     
     func hideActivityIndicator() {
-        //APESuperHUD.removeHUD(true, presentingView: self.view, completion: nil)
+        APESuperHUD.removeHUD(true, presentingView: self.view, completion: nil)
     }
 }

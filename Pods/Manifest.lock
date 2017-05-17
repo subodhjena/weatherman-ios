@@ -1,15 +1,18 @@
 PODS:
   - Alamofire (4.4.0)
+  - APESuperHUD (1.1.2)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
+  - APESuperHUD (~> 1.1)
   - SwiftyJSON (~> 3.1)
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  APESuperHUD: 9c7ea17cea21b4a9212f1c43810b0c8b9ee585a6
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 62b07f21de3ad7bf250b9a514e7e46e05136ddc2
+PODFILE CHECKSUM: 9346a8a0dd91840ad36cf9df6ea0d7f821e91829
 
 COCOAPODS: 1.0.1
