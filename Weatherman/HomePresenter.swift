@@ -35,5 +35,6 @@ extension HomePresenter : HomeInteractorOutput {
     
     func weatherDataFetchFailed() {
         view?.hideActivityIndicator()
+        view?.showMessage(title: "Failed", message: "Cannot get Weather Data, Try again.")
     }
 }

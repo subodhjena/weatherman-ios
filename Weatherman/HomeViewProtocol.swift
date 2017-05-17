@@ -9,7 +9,7 @@
 import Foundation
 
 
-protocol HomeViewProtocol: IndicatableViewProtocol {
+protocol HomeViewProtocol: IndicatableViewProtocol, MessageViewProtocol {
     
     var presenter: HomePresentationProtocol! { get set }
     

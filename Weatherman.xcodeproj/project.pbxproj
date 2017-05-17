@@ -10,6 +10,8 @@
 		586729C48B6977AFB1FB4A2A /* Pods_WeathermanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E56246F66E056A5B5999E7E /* Pods_WeathermanUITests.framework */; };
 		60CF1516F5BD4488987251BA /* Pods_Weatherman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6BC4767963B2596D2BFC49 /* Pods_Weatherman.framework */; };
 		9B2EAA83FCD0A0132A27AD89 /* Pods_WeathermanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33471BF3A39BC055E59759BB /* Pods_WeathermanTests.framework */; };
+		C2075A971ECCAE3C00A80AB5 /* MessageViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2075A961ECCAE3C00A80AB5 /* MessageViewProtocol.swift */; };
+		C2075A991ECCAEAE00A80AB5 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2075A981ECCAEAE00A80AB5 /* MessageView.swift */; };
 		C2178A571ECBEC9600BD7D86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2178A561ECBEC9600BD7D86 /* AppDelegate.swift */; };
 		C2178A5E1ECBEC9600BD7D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2178A5D1ECBEC9600BD7D86 /* Assets.xcassets */; };
 		C2178A611ECBEC9600BD7D86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2178A5F1ECBEC9600BD7D86 /* LaunchScreen.storyboard */; };
@@ -72,6 +74,8 @@
 		5E56246F66E056A5B5999E7E /* Pods_WeathermanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeathermanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E6BC4767963B2596D2BFC49 /* Pods_Weatherman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weatherman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		629BF1F2E6E36EF96E129EDC /* Pods-WeathermanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeathermanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeathermanUITests/Pods-WeathermanUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C2075A961ECCAE3C00A80AB5 /* MessageViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewProtocol.swift; sourceTree = "<group>"; };
+		C2075A981ECCAEAE00A80AB5 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		C2178A531ECBEC9600BD7D86 /* Weatherman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weatherman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2178A561ECBEC9600BD7D86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2178A5D1ECBEC9600BD7D86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -307,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				C22DF9401ECC9FFF00C12259 /* IndicatableViewProtocol.swift */,
+				C2075A961ECCAE3C00A80AB5 /* MessageViewProtocol.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -315,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				C22DF9431ECCA02E00C12259 /* IndicatableView.swift */,
+				C2075A981ECCAEAE00A80AB5 /* MessageView.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -660,10 +666,12 @@
 				C22CFF0F1ECC24C7008444EA /* Sys.swift in Sources */,
 				C22DF9411ECC9FFF00C12259 /* IndicatableViewProtocol.swift in Sources */,
 				C22CFF001ECC1F89008444EA /* Endpoints.swift in Sources */,
+				C2075A991ECCAEAE00A80AB5 /* MessageView.swift in Sources */,
 				C22DF94C1ECCA15700C12259 /* HomeWireframe.swift in Sources */,
 				C2178A571ECBEC9600BD7D86 /* AppDelegate.swift in Sources */,
 				C22CFEFE1ECC1F64008444EA /* API.swift in Sources */,
 				C22CFF0D1ECC24B9008444EA /* Coord.swift in Sources */,
+				C2075A971ECCAE3C00A80AB5 /* MessageViewProtocol.swift in Sources */,
 				C22CFF171ECC250A008444EA /* WeatherData.swift in Sources */,
 				C22CFF041ECC1FC7008444EA /* SessionManager.swift in Sources */,
 				C22CFF111ECC24D9008444EA /* Main.swift in Sources */,

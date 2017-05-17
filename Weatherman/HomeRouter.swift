@@ -25,6 +25,7 @@ class HomeRouter : NSObject, HomeWireframe {
         let navigation = UINavigationController(rootViewController: view)
         
         view.presenter = presenter
+        view.navigationItem.title = "Weatherman"
         
         presenter.view = view
         presenter.interactor = interactor
