@@ -11,7 +11,6 @@
 		60CF1516F5BD4488987251BA /* Pods_Weatherman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6BC4767963B2596D2BFC49 /* Pods_Weatherman.framework */; };
 		9B2EAA83FCD0A0132A27AD89 /* Pods_WeathermanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33471BF3A39BC055E59759BB /* Pods_WeathermanTests.framework */; };
 		C2178A571ECBEC9600BD7D86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2178A561ECBEC9600BD7D86 /* AppDelegate.swift */; };
-		C2178A5C1ECBEC9600BD7D86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2178A5A1ECBEC9600BD7D86 /* Main.storyboard */; };
 		C2178A5E1ECBEC9600BD7D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2178A5D1ECBEC9600BD7D86 /* Assets.xcassets */; };
 		C2178A611ECBEC9600BD7D86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2178A5F1ECBEC9600BD7D86 /* LaunchScreen.storyboard */; };
 		C2178A6C1ECBEC9600BD7D86 /* WeathermanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2178A6B1ECBEC9600BD7D86 /* WeathermanTests.swift */; };
@@ -32,6 +31,7 @@
 		C22CFF131ECC24E4008444EA /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22CFF121ECC24E4008444EA /* Weather.swift */; };
 		C22CFF151ECC24ED008444EA /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22CFF141ECC24ED008444EA /* Wind.swift */; };
 		C22CFF171ECC250A008444EA /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22CFF161ECC250A008444EA /* WeatherData.swift */; };
+		C2DE853C1ECC326C00CE0951 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DE853B1ECC326C00CE0951 /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +62,6 @@
 		629BF1F2E6E36EF96E129EDC /* Pods-WeathermanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeathermanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeathermanUITests/Pods-WeathermanUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C2178A531ECBEC9600BD7D86 /* Weatherman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weatherman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2178A561ECBEC9600BD7D86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C2178A5B1ECBEC9600BD7D86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2178A5D1ECBEC9600BD7D86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2178A601ECBEC9600BD7D86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2178A621ECBEC9600BD7D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,6 +87,7 @@
 		C22CFF121ECC24E4008444EA /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		C22CFF141ECC24ED008444EA /* Wind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
 		C22CFF161ECC250A008444EA /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		C2DE853B1ECC326C00CE0951 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		CF4DC3B771A3ED4D383202C1 /* Pods-Weatherman.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weatherman.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Weatherman/Pods-Weatherman.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -217,7 +217,6 @@
 		C22CFEF01ECC19BD008444EA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C2178A5A1ECBEC9600BD7D86 /* Main.storyboard */,
 				C2178A5D1ECBEC9600BD7D86 /* Assets.xcassets */,
 				C2178A5F1ECBEC9600BD7D86 /* LaunchScreen.storyboard */,
 				C2178A621ECBEC9600BD7D86 /* Info.plist */,
@@ -228,6 +227,10 @@
 		C22CFEF11ECC1EB2008444EA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C2DE853A1ECC324200CE0951 /* Protocols */,
+				C2DE85391ECC323700CE0951 /* Presenter */,
+				C2DE85381ECC323200CE0951 /* Router */,
+				C2DE85371ECC322900CE0951 /* Interactor */,
 				C22CFEF41ECC1ED3008444EA /* View */,
 			);
 			name = Home;
@@ -237,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				C22CFEF21ECC1ECE008444EA /* HomeViewController.swift */,
+				C2DE853B1ECC326C00CE0951 /* Home.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -270,6 +274,34 @@
 				C22CFF061ECC1FED008444EA /* Globlas.swift */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		C2DE85371ECC322900CE0951 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		C2DE85381ECC323200CE0951 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		C2DE85391ECC323700CE0951 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		C2DE853A1ECC324200CE0951 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 		D8A9C7510113FAAC5C6139C4 /* Frameworks */ = {
@@ -402,7 +434,7 @@
 			files = (
 				C2178A611ECBEC9600BD7D86 /* LaunchScreen.storyboard in Resources */,
 				C2178A5E1ECBEC9600BD7D86 /* Assets.xcassets in Resources */,
-				C2178A5C1ECBEC9600BD7D86 /* Main.storyboard in Resources */,
+				C2DE853C1ECC326C00CE0951 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,14 +634,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C2178A5A1ECBEC9600BD7D86 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C2178A5B1ECBEC9600BD7D86 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C2178A5F1ECBEC9600BD7D86 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
