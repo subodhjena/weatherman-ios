@@ -15,4 +15,5 @@ protocol HomePresentationProtocol: class {
     var router: HomeWireframe! { get set }
     
     func viewDidLoad()
+    func getWeatherForCity(cityName: String)
 }

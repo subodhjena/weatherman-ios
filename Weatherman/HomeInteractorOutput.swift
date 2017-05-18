@@ -11,5 +11,5 @@ import Foundation
 protocol HomeInteractorOutput: class {
     
     func weatherDataFetched(weatherData: WeatherData)
-    func weatherDataFetchFailed()
+    func weatherDataFetchFailed(message: String)
 }

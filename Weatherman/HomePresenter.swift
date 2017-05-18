@@ -16,12 +16,17 @@ class HomePresenter : HomePresentationProtocol
     
     var weatherData: WeatherData! {
         didSet {
-            view?.showWeatherData(weatherData: weatherData)
+            view?.displayWeatherData(weatherData: weatherData)
         }
     }
     
     func viewDidLoad() {
-        interactor.fetchWeatherData()
+        
+    }
+    
+    func getWeatherForCity(cityName: String) {
+        
+        interactor.fetchWeatherData(cityName: cityName)
         view?.showActivityIndicator()
     }
 }
@@ -33,8 +38,8 @@ extension HomePresenter : HomeInteractorOutput {
         view?.hideActivityIndicator()
     }
     
-    func weatherDataFetchFailed() {
+    func weatherDataFetchFailed(message: String) {
         view?.hideActivityIndicator()
-        view?.showMessage(title: "Failed", message: "Cannot get Weather Data, Try again.")
+        view?.showMessage(title: "Failed", message: message)
     }
 }

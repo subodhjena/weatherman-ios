@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8dZ-HL-s1a">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8dZ-HL-s1a">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,12 +19,45 @@
                     <view key="view" contentMode="scaleToFill" id="kbz-8R-KjZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOC-EQ-R7f">
+                                <rect key="frame" x="136" y="40" width="104" height="26"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23 C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCY-sV-GB7">
+                                <rect key="frame" x="116" y="101" width="144" height="80"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="68"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detailed Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zy-oD-vdq">
+                                <rect key="frame" x="134.5" y="216" width="108.5" height="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QOC-EQ-R7f" firstAttribute="top" secondItem="0o9-hy-oW9" secondAttribute="bottom" constant="20" id="5T5-3i-E4x"/>
+                            <constraint firstItem="QOC-EQ-R7f" firstAttribute="centerX" secondItem="kbz-8R-KjZ" secondAttribute="centerX" id="K1R-xP-iYZ"/>
+                            <constraint firstItem="3Zy-oD-vdq" firstAttribute="centerX" secondItem="CCY-sV-GB7" secondAttribute="centerX" id="Kgr-jN-xVg"/>
+                            <constraint firstItem="CCY-sV-GB7" firstAttribute="top" secondItem="QOC-EQ-R7f" secondAttribute="bottom" constant="35" id="KvG-y2-MDe"/>
+                            <constraint firstItem="3Zy-oD-vdq" firstAttribute="top" secondItem="CCY-sV-GB7" secondAttribute="bottom" constant="35" id="aMb-0m-x8m"/>
+                            <constraint firstItem="CCY-sV-GB7" firstAttribute="centerX" secondItem="QOC-EQ-R7f" secondAttribute="centerX" id="otY-hu-pwh"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelCityName" destination="QOC-EQ-R7f" id="vQE-5K-dld"/>
+                        <outlet property="labelDescription" destination="3Zy-oD-vdq" id="rAo-Ju-tct"/>
+                        <outlet property="labelTempreature" destination="CCY-sV-GB7" id="VJF-kU-LPR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zes-zt-cCH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-130" y="-83"/>
+            <point key="canvasLocation" x="-426" y="-49"/>
         </scene>
     </scenes>
 </document>

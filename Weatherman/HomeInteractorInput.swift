@@ -12,5 +12,5 @@ protocol HomeInteractorInput: class {
     
     weak var output: HomeInteractorOutput! { get set }
     
-    func fetchWeatherData()
+    func fetchWeatherData(cityName: String)
 }
