@@ -20,6 +20,12 @@ class HomePresenter : HomePresentationProtocol
         }
     }
     
+    var forecastData: ForecastData! {
+        didSet {
+            view?.displayForecastData(forecastData: forecastData)
+        }
+    }
+    
     func viewDidLoad() {
         
     }
@@ -28,6 +34,10 @@ class HomePresenter : HomePresentationProtocol
         
         interactor.fetchWeatherData(cityName: cityName)
         view?.showActivityIndicator()
+    }
+    
+    func getForecastForCity(cityName: String) {
+        interactor.fetchForecastData(cityName: cityName)
     }
 }
 
@@ -41,5 +51,13 @@ extension HomePresenter : HomeInteractorOutput {
     func weatherDataFetchFailed(message: String) {
         view?.hideActivityIndicator()
         view?.showMessage(title: "Failed", message: message)
+    }
+    
+    func forecastDataFetched(forecastData: ForecastData) {
+        self.forecastData = forecastData
+    }
+    
+    func forecastDataFetchFailed(message: String) {
+        view?.showMessage(title: "Cannot Fetch Forecast Data", message: message)
     }
 }

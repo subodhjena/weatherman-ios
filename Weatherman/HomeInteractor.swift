@@ -24,4 +24,19 @@ class HomeInteractor: HomeInteractorInput {
             }
         }
     }
+    
+    func fetchForecastData(cityName: String) {
+        
+        APIManager.sharedInstance.getForecastByCityName(cityName: cityName) { (result) in
+            
+            do {
+                let data = try result.unwrap()
+                self.output.forecastDataFetched(forecastData: data)
+            }
+            catch let error as NSError {
+                self.output.forecastDataFetchFailed(message: error.localizedDescription)
+            }
+        }
+    
+    }
 }

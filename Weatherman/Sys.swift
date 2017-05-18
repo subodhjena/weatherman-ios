@@ -10,12 +10,14 @@ import Foundation
 import SwiftyJSON
 
 struct Sys {
+    
     public var type : Int?
     public var id : Int?
     public var message : Double?
     public var country : String?
     public var sunrise : Int?
     public var sunset : Int?
+    public var pod : String?
 }
 
 extension Sys {
@@ -28,5 +30,6 @@ extension Sys {
         country = json["country"].stringValue
         sunrise = json["sunrise"].intValue
         sunset = json["sunset"].intValue
+        pod = json["pod"].stringValue
     }
 }

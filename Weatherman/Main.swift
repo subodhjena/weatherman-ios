@@ -16,6 +16,9 @@ struct Main {
     public var humidity : Int?
     public var temp_min : Double?
     public var temp_max : Double?
+    public var sea_level : Double?
+    public var grnd_level : Double?
+    public var temp_kf : Double?
 }
 
 extension Main {
@@ -27,6 +30,11 @@ extension Main {
         humidity = json["humidity"].intValue
         temp_min = json["temp_min"].doubleValue
         temp_max = json["temp_max"].doubleValue
+        sea_level = json["sea_level"].doubleValue
+        grnd_level = json["grnd_level"].doubleValue
+        temp_kf = json["temp_kf"].doubleValue
     }
 }
+
+
 

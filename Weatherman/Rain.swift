@@ -1,22 +1,22 @@
 //
-//  Clouds.swift
+//  Rain.swift
 //  Weatherman
 //
-//  Created by Subodh Jena on 5/17/17.
+//  Created by Subodh Jena on 5/18/17.
 //  Copyright © 2017 Subodh Jena. All rights reserved.
 //
 
 import Foundation
 import SwiftyJSON
 
-struct Clouds {
-    
-    public var all : Int?
+struct Rain {
+    public var h : Double?
 }
 
-extension Clouds {
+extension Rain {
     
     init(json: JSON) {
-        all = json["all"].intValue
+    
+        h = json["3h"].doubleValue
     }
 }

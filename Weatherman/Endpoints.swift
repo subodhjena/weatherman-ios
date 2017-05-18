@@ -42,7 +42,7 @@ enum Endpoints {
 
     enum Forecast: EndpointProtocol {
         
-        case GetForecast()
+        case GetForecast(cityName: String, appId: String)
         
         var method: HTTPMethod {
             switch self {
@@ -53,8 +53,8 @@ enum Endpoints {
         
         public var path: String {
             switch self {
-            case .GetForecast():
-                return "forecast"
+            case .GetForecast(let cityName, let appID):
+                return "forecast?q=\(cityName)&appid=\(appID)"
             }
         }
         

@@ -12,13 +12,18 @@ class HomeViewController: UIViewController {
 
     var presenter: HomePresentationProtocol!
     var searchActive : Bool = false
+    var forecastData : ForecastData! {
+        didSet{
+            self.tableForecast.reloadData()
+        }
+    }
     
     // MARK: - IBOutlets
     
     @IBOutlet weak var labelCityName: UILabel!
     @IBOutlet weak var labelTempreature: UILabel!
     @IBOutlet weak var labelDescription: UILabel!
-    
+    @IBOutlet weak var tableForecast: UITableView!
     
     override func viewDidLoad() {
         
@@ -26,6 +31,7 @@ class HomeViewController: UIViewController {
         self.presenter.viewDidLoad()
         self.resetUI()
         self.createSearchBar()
+        self.tableForecast.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -78,6 +84,7 @@ extension HomeViewController: UISearchBarDelegate {
         searchActive = false
         
         presenter.getWeatherForCity(cityName: searchBar.text!)
+        presenter.getForecastForCity(cityName: searchBar.text!)
         
         searchBar.text = ""
         searchBar.resignFirstResponder()
@@ -94,5 +101,35 @@ extension HomeViewController: HomeViewProtocol {
             self.labelTempreature.text = "\(Int((weatherData.main?.temp)!))"
             self.labelDescription.text = "Pressure: \((weatherData.main?.pressure)!) | Humidity: \((weatherData.main?.humidity)!) | Max: \((weatherData.main?.temp_max)!) | Min: \((weatherData.main?.temp_min)!)"
         }
+    }
+    
+    func displayForecastData(forecastData: ForecastData) {
+        self.forecastData = forecastData
+    }
+}
+
+extension HomeViewController: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        if(forecastData != nil) {
+            return (self.forecastData.list?.count)!
+        }
+        
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ForecastCell") as! ForecastTableViewCell
+        let forecast = self.forecastData.list?[indexPath.row]
+        
+        cell.setUpCell(forecast: forecast!)
+        
+        return cell
     }
 }

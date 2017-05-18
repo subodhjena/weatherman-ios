@@ -14,4 +14,5 @@ protocol HomeViewProtocol: IndicatableViewProtocol, MessageViewProtocol {
     var presenter: HomePresentationProtocol! { get set }
     
     func displayWeatherData(weatherData: WeatherData)
+    func displayForecastData(forecastData: ForecastData)
 }

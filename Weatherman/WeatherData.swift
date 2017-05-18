@@ -31,7 +31,7 @@ extension WeatherData {
     init(json: JSON) {
         
         coord = Coord(json: json["coord"])
-        weather = json.arrayValue.map{ Weather(json: $0) }
+        weather = json["weather"].arrayValue.map{ Weather(json: $0) }
         base = json["base"].stringValue
         main = Main(json: json["main"])
         visibility = json["visibility"].intValue

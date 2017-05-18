@@ -12,4 +12,7 @@ protocol HomeInteractorOutput: class {
     
     func weatherDataFetched(weatherData: WeatherData)
     func weatherDataFetchFailed(message: String)
+    
+    func forecastDataFetched(forecastData: ForecastData)
+    func forecastDataFetchFailed(message: String)
 }

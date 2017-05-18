@@ -16,4 +16,5 @@ protocol HomePresentationProtocol: class {
     
     func viewDidLoad()
     func getWeatherForCity(cityName: String)
+    func getForecastForCity(cityName: String)
 }

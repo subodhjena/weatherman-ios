@@ -37,5 +37,22 @@ final class APIManager {
             
         }
     }
+    
+    // MARK :- Forecast
+    
+    func getForecastByCityName(cityName: String, completionHandler: @escaping (APIResult<ForecastData>) -> Void) {
+        
+        manager.apiRequest(endpoint: Endpoints.Forecast.GetForecast(cityName: cityName, appId: API.appID), parameters: nil, headers: nil).responseJSON { (response) in
+            
+            switch response.result {
+            case .success(let json):
+                let forecastJSON = JSON(json)
+                let forecastData = ForecastData(json: forecastJSON)
+                completionHandler(APIResult{ return forecastData })
+            case .failure(let error):
+                completionHandler(APIResult{ throw error })
+            }
+        }
+    }
 }
 
