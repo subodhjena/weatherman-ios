@@ -39,6 +39,14 @@ class HomePresenter : HomePresentationProtocol
     func getForecastForCity(cityName: String) {
         interactor.fetchForecastData(cityName: cityName)
     }
+    
+    func tempreatureInCelcius(kelvin: Double) -> Int {
+        return Int(kelvin - 273.15)
+    }
+    
+    func tempreatureInFahrenheit(kelvin: Double) -> Int {
+        return Int(9/5 * (kelvin - 273.15) + 32)
+    }
 }
 
 extension HomePresenter : HomeInteractorOutput {

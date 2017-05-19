@@ -10,6 +10,8 @@ import UIKit
 
 class ForecastTableViewCell: UITableViewCell {
     
+    var presenter: HomePresentationProtocol!
+    
     // MARK: - IBOutlets
     
     @IBOutlet weak var labelDateText: UILabel!
@@ -35,8 +37,10 @@ class ForecastTableViewCell: UITableViewCell {
         self.labelDateText.text = formatDate(date: forecast.dateTxt!)
         self.labelPressure.text = "Pressure: \((forecast.main?.pressure)!)"
         self.labelHumidity.text = "Humidity: \((forecast.main?.humidity)!)"
-        self.labelTemp.text = "\(Int((forecast.main?.temp)!))"
-        self.labelAverageTemp.text = "Max: \(Int((forecast.main?.temp_max)!)) | Min: \(Int((forecast.main?.temp_min)!))"
+        
+        
+        self.labelTemp.text = "\(self.presenter.tempreatureInCelcius(kelvin: (forecast.main?.temp)!))°C"
+        self.labelAverageTemp.text = "Max: \(self.presenter.tempreatureInCelcius(kelvin: (forecast.main?.temp_max)!))°C | Min: \(self.presenter.tempreatureInCelcius(kelvin: (forecast.main?.temp_min)!))°C"
     }
     
     func formatDate(date: String) -> String {

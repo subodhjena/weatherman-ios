@@ -17,4 +17,7 @@ protocol HomePresentationProtocol: class {
     func viewDidLoad()
     func getWeatherForCity(cityName: String)
     func getForecastForCity(cityName: String)
+    
+    func tempreatureInCelcius(kelvin: Double) -> Int
+    func tempreatureInFahrenheit(kelvin: Double) -> Int
 }

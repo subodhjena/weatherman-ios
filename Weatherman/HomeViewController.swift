@@ -98,8 +98,8 @@ extension HomeViewController: HomeViewProtocol {
         self.labelCityName.text = weatherData.name
         
         if(weatherData.main != nil) {
-            self.labelTempreature.text = "\(Int((weatherData.main?.temp)!))"
-            self.labelDescription.text = "Pressure: \((weatherData.main?.pressure)!) | Humidity: \((weatherData.main?.humidity)!) | Max: \((weatherData.main?.temp_max)!) | Min: \((weatherData.main?.temp_min)!)"
+            self.labelTempreature.text = "\(presenter.tempreatureInCelcius(kelvin: (weatherData.main?.temp)!))°C"
+            self.labelDescription.text = "Pressure: \((weatherData.main?.pressure)!) | Humidity: \((weatherData.main?.humidity)!) | Max: \(presenter.tempreatureInCelcius(kelvin: (weatherData.main?.temp_max)!))°C | Min: \((presenter.tempreatureInCelcius(kelvin: (weatherData.main?.temp_min)!)))°C"
         }
     }
     
@@ -126,6 +126,7 @@ extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ForecastCell") as! ForecastTableViewCell
+        cell.presenter = self.presenter
         let forecast = self.forecastData.list?[indexPath.row]
         
         cell.setUpCell(forecast: forecast!)
