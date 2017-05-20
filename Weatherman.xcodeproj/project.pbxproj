@@ -47,7 +47,6 @@
 		C22DF94E1ECCA24500C12259 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DF94D1ECCA24500C12259 /* HomePresenter.swift */; };
 		C22DF9501ECCA36B00C12259 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DF94F1ECCA36B00C12259 /* HomeInteractor.swift */; };
 		C22DF9521ECCA40200C12259 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DF9511ECCA40200C12259 /* HomeRouter.swift */; };
-		C24996181ECF13AA0013E7F8 /* TempreatureUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24996171ECF13AA0013E7F8 /* TempreatureUnit.swift */; };
 		C2BFDF8C1ECD7BD7001D712F /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BFDF8B1ECD7BD7001D712F /* City.swift */; };
 		C2DE853C1ECC326C00CE0951 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DE853B1ECC326C00CE0951 /* Home.storyboard */; };
 		C2DE853F1ECC39CE00CE0951 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE853E1ECC39CE00CE0951 /* RootRouter.swift */; };
@@ -123,7 +122,6 @@
 		C22DF94D1ECCA24500C12259 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		C22DF94F1ECCA36B00C12259 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		C22DF9511ECCA40200C12259 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
-		C24996171ECF13AA0013E7F8 /* TempreatureUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempreatureUnit.swift; sourceTree = "<group>"; };
 		C2BFDF8B1ECD7BD7001D712F /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		C2DE853B1ECC326C00CE0951 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C2DE853E1ECC39CE00CE0951 /* RootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
@@ -197,7 +195,6 @@
 		C2178A551ECBEC9600BD7D86 /* Weatherman */ = {
 			isa = PBXGroup;
 			children = (
-				C24996161ECF13930013E7F8 /* Enumerations */,
 				C22DF9421ECCA01D00C12259 /* Extensions */,
 				C22DF93F1ECC9FE600C12259 /* Protocols */,
 				C22CFF051ECC1FDB008444EA /* Utilities */,
@@ -341,14 +338,6 @@
 				C2075A981ECCAEAE00A80AB5 /* MessageView.swift */,
 			);
 			name = Extensions;
-			sourceTree = "<group>";
-		};
-		C24996161ECF13930013E7F8 /* Enumerations */ = {
-			isa = PBXGroup;
-			children = (
-				C24996171ECF13AA0013E7F8 /* TempreatureUnit.swift */,
-			);
-			name = Enumerations;
 			sourceTree = "<group>";
 		};
 		C2DE85371ECC322900CE0951 /* Interactor */ = {
@@ -705,7 +694,6 @@
 				C22CFF171ECC250A008444EA /* WeatherData.swift in Sources */,
 				C22CFF041ECC1FC7008444EA /* SessionManager.swift in Sources */,
 				C22CFF111ECC24D9008444EA /* Main.swift in Sources */,
-				C24996181ECF13AA0013E7F8 /* TempreatureUnit.swift in Sources */,
 				C22DF94E1ECCA24500C12259 /* HomePresenter.swift in Sources */,
 				C22CFEF31ECC1ECE008444EA /* HomeViewController.swift in Sources */,
 				C22DF93E1ECC9FC500C12259 /* HomeViewProtocol.swift in Sources */,

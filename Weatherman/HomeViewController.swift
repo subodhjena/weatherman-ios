@@ -98,8 +98,8 @@ extension HomeViewController: HomeViewProtocol {
         self.labelCityName.text = weatherData.name
         
         if(weatherData.main != nil) {
-            self.labelTempreature.text = "\(presenter.tempreatureInCelcius(kelvin: (weatherData.main?.temp)!))°C"
-            self.labelDescription.text = "Pressure: \((weatherData.main?.pressure)!) | Humidity: \((weatherData.main?.humidity)!) | Max: \(presenter.tempreatureInCelcius(kelvin: (weatherData.main?.temp_max)!))°C | Min: \((presenter.tempreatureInCelcius(kelvin: (weatherData.main?.temp_min)!)))°C"
+            self.labelTempreature.text = presenter.tempreatureInCelcius(kelvin: (weatherData.main?.temp)!)
+            self.labelDescription.text = "Pressure: \((weatherData.main?.pressure)!) | Humidity: \((weatherData.main?.humidity)!) | Max: \(presenter.tempreatureInCelcius(kelvin: (weatherData.main?.temp_min)!)) | Min: \(presenter.tempreatureInCelcius(kelvin: (weatherData.main?.temp_min)!))"
         }
     }
     

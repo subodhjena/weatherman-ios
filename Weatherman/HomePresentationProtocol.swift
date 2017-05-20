@@ -18,6 +18,6 @@ protocol HomePresentationProtocol: class {
     func getWeatherForCity(cityName: String)
     func getForecastForCity(cityName: String)
     
-    func tempreatureInCelcius(kelvin: Double) -> Int
-    func tempreatureInFahrenheit(kelvin: Double) -> Int
+    func tempreatureInCelcius(kelvin: Double) -> String
+    func tempreatureInFahrenheit(kelvin: Double) -> String
 }

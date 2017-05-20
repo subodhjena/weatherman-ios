@@ -39,8 +39,8 @@ class ForecastTableViewCell: UITableViewCell {
         self.labelHumidity.text = "Humidity: \((forecast.main?.humidity)!)"
         
         
-        self.labelTemp.text = "\(self.presenter.tempreatureInCelcius(kelvin: (forecast.main?.temp)!))°C"
-        self.labelAverageTemp.text = "Max: \(self.presenter.tempreatureInCelcius(kelvin: (forecast.main?.temp_max)!))°C | Min: \(self.presenter.tempreatureInCelcius(kelvin: (forecast.main?.temp_min)!))°C"
+        self.labelTemp.text = "\(presenter.tempreatureInCelcius(kelvin: (forecast.main?.temp)!))"
+        self.labelAverageTemp.text = "Max: \(presenter.tempreatureInCelcius(kelvin: (forecast.main?.temp_max)!)) | Min: \(presenter.tempreatureInCelcius(kelvin: (forecast.main?.temp_min)!))"
     }
     
     func formatDate(date: String) -> String {
