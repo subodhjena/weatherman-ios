@@ -22,7 +22,7 @@ class HomeRouter : NSObject, HomeWireframe {
         let interactor = HomeInteractor()
         let router = HomeRouter()
         
-        let navigation = UINavigationController(rootViewController: view)
+        // let navigation = UINavigationController(rootViewController: view)
         
         view.presenter = presenter
         view.navigationItem.title = "Weatherman"
@@ -35,6 +35,6 @@ class HomeRouter : NSObject, HomeWireframe {
         
         router.viewController = view
         
-        return navigation
+        return view
     }
 }

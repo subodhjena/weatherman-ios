@@ -30,8 +30,10 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         self.presenter.viewDidLoad()
         self.resetUI()
-        self.createSearchBar()
         self.tableForecast.dataSource = self
+        
+        presenter.getWeatherForCity(cityName: "Delhi")
+        presenter.getForecastForCity(cityName: "Delhi")
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,48 +48,9 @@ class HomeViewController: UIViewController {
         self.labelDescription.text = ""
     }
     
-    // MARK: - Search Bar
-    
-    private func createSearchBar() {
-        let searchBar = UISearchBar()
-        searchBar.showsCancelButton = true
-        searchBar.placeholder = "Enter City Name"
-        searchBar.delegate = self
-        
-        self.navigationItem.titleView = searchBar
-    }
-    
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    }
-}
-
-extension HomeViewController: UISearchBarDelegate {
-    
-    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-        searchActive = true
-    }
-    
-    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-        searchActive = false
-    }
-    
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        searchActive = false
-        searchBar.text = ""
-        searchBar.resignFirstResponder()
-        
-    }
-    
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchActive = false
-        
-        presenter.getWeatherForCity(cityName: searchBar.text!)
-        presenter.getForecastForCity(cityName: searchBar.text!)
-        
-        searchBar.text = ""
-        searchBar.resignFirstResponder()
     }
 }
 
