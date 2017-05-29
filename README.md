@@ -1,5 +1,8 @@
 # Weatherman #
 
+[![Build Status](https://travis-ci.org/jenasubodh/weatherman-ios.svg?branch=master)](https://travis-ci.org/jenasubodh/weatherman-ios)
+[![codecov](https://codecov.io/gh/jenasubodh/weatherman-ios/branch/master/graph/badge.svg)](https://codecov.io/gh/jenasubodh/weatherman-ios)
+
 An application to get weather and weather forecast for specified location.
 
 ![Weatherman Screenshots](https://dl.dropboxusercontent.com/s/zxpdd79p6rl4vww/weatherman_screenshots.jpg)
