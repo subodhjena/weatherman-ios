@@ -1,0 +1,6 @@
+language: objective-c
+os: osx
+osx_image: xcode8.2
+
+after_success:
+    - bash <(curl -s https://codecov.io/bash) -J 'weatherman-ios'
