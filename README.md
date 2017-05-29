@@ -2,6 +2,8 @@
 
 This README would normally document whatever steps are necessary to get your application up and running.
 
+![Weatherman Screenshots](https://dl.dropboxusercontent.com/s/zxpdd79p6rl4vww/weatherman_screenshots.jpg)
+
 ### What is this repository for? ###
 
 * Quick summary
