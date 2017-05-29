@@ -1,4 +1,4 @@
-language: swift # or objective-c
+language: objective-c # or swift
 osx_image: xcode8.2
 script:
   - xcodebuild -scheme Weatherman -workspace Weatherman.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=10.2' build test
