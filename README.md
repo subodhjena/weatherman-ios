@@ -1,6 +1,6 @@
 # Weatherman #
 
-[![CircleCI](https://circleci.com/gh/jenasubodh/weatherman-ios.svg?style=svg)](https://circleci.com/gh/jenasubodh/weatherman-ios)
+[![Build Status](https://travis-ci.org/jenasubodh/weatherman-ios.svg?branch=master)](https://travis-ci.org/jenasubodh/weatherman-ios)
 [![codecov](https://codecov.io/gh/jenasubodh/weatherman-ios/branch/master/graph/badge.svg)](https://codecov.io/gh/jenasubodh/weatherman-ios)
 
 An application to get weather and weather forecast for specified location.
