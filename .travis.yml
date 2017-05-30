@@ -1,6 +1,6 @@
-language: objective-c # or swift
-osx_image: xcode8.3
+language: objective-c
+osx_image: xcode8.2
 script:
-  - xcodebuild -scheme Weatherman -workspace Weatherman.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=10.3' build test
+  - xcodebuild -scheme Weatherman -workspace Weatherman.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=10.2' build test
 after_success:
-    - bash <(curl -s https://codecov.io/bash) -J 'weatherman-ios'
+  - bash <(curl -s https://codecov.io/bash) -J 'weatherman-ios'
