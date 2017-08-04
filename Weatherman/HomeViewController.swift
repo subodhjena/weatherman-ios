@@ -24,6 +24,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var labelTempreature: UILabel!
     @IBOutlet weak var labelDescription: UILabel!
     @IBOutlet weak var tableForecast: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         
@@ -31,6 +32,7 @@ class HomeViewController: UIViewController {
         self.presenter.viewDidLoad()
         self.resetUI()
         self.tableForecast.dataSource = self
+        self.searchBar.delegate = self
         
         presenter.getWeatherForCity(cityName: "Delhi")
         presenter.getForecastForCity(cityName: "Delhi")
@@ -95,5 +97,30 @@ extension HomeViewController: UITableViewDataSource {
         cell.setUpCell(forecast: forecast!)
         
         return cell
+    }
+}
+
+extension HomeViewController: UISearchBarDelegate {
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchActive = true;
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        searchActive = false;
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchActive = false;
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+        presenter.getWeatherForCity(cityName: searchBar.text!)
+        presenter.getForecastForCity(cityName: searchBar.text!)
+        
+        searchBar.text = "";
+        searchBar.resignFirstResponder()
+        searchActive = false;
     }
 }

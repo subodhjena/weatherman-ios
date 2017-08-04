@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8dZ-HL-s1a">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8dZ-HL-s1a">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,19 +22,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOC-EQ-R7f">
-                                <rect key="frame" x="129.5" y="40" width="117.5" height="29.5"/>
+                                <rect key="frame" x="128.5" y="94" width="117.5" height="29.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23 C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCY-sV-GB7">
-                                <rect key="frame" x="116" y="104.5" width="144" height="80"/>
+                                <rect key="frame" x="115.5" y="131.5" width="144" height="80"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="68"/>
                                 <color key="textColor" red="0.091776154935359955" green="0.65724790096282959" blue="0.9523966908454895" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detailed Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zy-oD-vdq">
-                                <rect key="frame" x="134.5" y="219.5" width="108.5" height="14"/>
+                                <rect key="frame" x="134" y="219.5" width="108.5" height="14"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                 <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -104,25 +104,33 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <searchBar contentMode="redraw" placeholder="Enter City Name" translatesAutoresizingMaskIntoConstraints="NO" id="ZpK-Tc-MMX">
+                                <rect key="frame" x="1" y="28" width="375" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="QGG-tF-Cs3" firstAttribute="leading" secondItem="kbz-8R-KjZ" secondAttribute="leadingMargin" id="5CR-aS-Lye"/>
-                            <constraint firstItem="QOC-EQ-R7f" firstAttribute="top" secondItem="0o9-hy-oW9" secondAttribute="bottom" constant="20" id="5T5-3i-E4x"/>
-                            <constraint firstItem="0gB-mh-fXx" firstAttribute="top" secondItem="QGG-tF-Cs3" secondAttribute="bottom" id="A7d-PJ-cg8"/>
-                            <constraint firstItem="QGG-tF-Cs3" firstAttribute="top" secondItem="3Zy-oD-vdq" secondAttribute="bottom" constant="35" id="AtZ-eV-5Pg"/>
-                            <constraint firstItem="QOC-EQ-R7f" firstAttribute="centerX" secondItem="kbz-8R-KjZ" secondAttribute="centerX" id="K1R-xP-iYZ"/>
-                            <constraint firstItem="3Zy-oD-vdq" firstAttribute="centerX" secondItem="CCY-sV-GB7" secondAttribute="centerX" id="Kgr-jN-xVg"/>
-                            <constraint firstItem="CCY-sV-GB7" firstAttribute="top" secondItem="QOC-EQ-R7f" secondAttribute="bottom" constant="35" id="KvG-y2-MDe"/>
-                            <constraint firstItem="QGG-tF-Cs3" firstAttribute="trailing" secondItem="kbz-8R-KjZ" secondAttribute="trailingMargin" id="RF1-dI-Zz3"/>
-                            <constraint firstItem="3Zy-oD-vdq" firstAttribute="top" secondItem="CCY-sV-GB7" secondAttribute="bottom" constant="35" id="aMb-0m-x8m"/>
-                            <constraint firstItem="CCY-sV-GB7" firstAttribute="centerX" secondItem="QOC-EQ-R7f" secondAttribute="centerX" id="otY-hu-pwh"/>
+                            <constraint firstItem="ZpK-Tc-MMX" firstAttribute="top" secondItem="0o9-hy-oW9" secondAttribute="bottom" constant="8" id="0f6-Qi-ubO"/>
+                            <constraint firstItem="QGG-tF-Cs3" firstAttribute="trailing" secondItem="kbz-8R-KjZ" secondAttribute="trailingMargin" id="EDA-tR-g1q"/>
+                            <constraint firstItem="QOC-EQ-R7f" firstAttribute="top" secondItem="ZpK-Tc-MMX" secondAttribute="bottom" constant="22" id="GDe-oZ-jsX"/>
+                            <constraint firstItem="CCY-sV-GB7" firstAttribute="top" secondItem="QOC-EQ-R7f" secondAttribute="bottom" constant="8" id="Myn-np-kKf"/>
+                            <constraint firstAttribute="trailing" secondItem="ZpK-Tc-MMX" secondAttribute="trailing" constant="-1" id="Qw3-Ms-Ypl"/>
+                            <constraint firstItem="CCY-sV-GB7" firstAttribute="centerX" secondItem="kbz-8R-KjZ" secondAttribute="centerX" id="bkx-0E-Gly"/>
+                            <constraint firstItem="QGG-tF-Cs3" firstAttribute="top" secondItem="3Zy-oD-vdq" secondAttribute="bottom" constant="35" id="bvr-r0-gU0"/>
+                            <constraint firstItem="3Zy-oD-vdq" firstAttribute="top" secondItem="CCY-sV-GB7" secondAttribute="bottom" constant="8" id="dbz-EQ-Yzn"/>
+                            <constraint firstItem="3Zy-oD-vdq" firstAttribute="centerX" secondItem="kbz-8R-KjZ" secondAttribute="centerX" id="edj-4w-AKM"/>
+                            <constraint firstItem="0gB-mh-fXx" firstAttribute="top" secondItem="QGG-tF-Cs3" secondAttribute="bottom" id="eoB-tu-rq9"/>
+                            <constraint firstItem="ZpK-Tc-MMX" firstAttribute="leading" secondItem="kbz-8R-KjZ" secondAttribute="leading" constant="1" id="iqs-CV-7OH"/>
+                            <constraint firstItem="QGG-tF-Cs3" firstAttribute="leading" secondItem="kbz-8R-KjZ" secondAttribute="leadingMargin" id="jp9-4l-x1P"/>
+                            <constraint firstItem="QOC-EQ-R7f" firstAttribute="centerX" secondItem="kbz-8R-KjZ" secondAttribute="centerX" id="pif-vH-w9f"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="labelCityName" destination="QOC-EQ-R7f" id="vQE-5K-dld"/>
                         <outlet property="labelDescription" destination="3Zy-oD-vdq" id="rAo-Ju-tct"/>
                         <outlet property="labelTempreature" destination="CCY-sV-GB7" id="VJF-kU-LPR"/>
+                        <outlet property="searchBar" destination="ZpK-Tc-MMX" id="dfS-L0-82b"/>
                         <outlet property="tableForecast" destination="QGG-tF-Cs3" id="LZi-iG-dgt"/>
                     </connections>
                 </viewController>

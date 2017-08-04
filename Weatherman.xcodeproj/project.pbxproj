@@ -47,7 +47,6 @@
 		C22DF94E1ECCA24500C12259 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DF94D1ECCA24500C12259 /* HomePresenter.swift */; };
 		C22DF9501ECCA36B00C12259 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DF94F1ECCA36B00C12259 /* HomeInteractor.swift */; };
 		C22DF9521ECCA40200C12259 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DF9511ECCA40200C12259 /* HomeRouter.swift */; };
-		C286E26F1ED82A4E003982C5 /* sunny.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C286E26E1ED82A4E003982C5 /* sunny.mp4 */; };
 		C2BFDF8C1ECD7BD7001D712F /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BFDF8B1ECD7BD7001D712F /* City.swift */; };
 		C2DE853C1ECC326C00CE0951 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DE853B1ECC326C00CE0951 /* Home.storyboard */; };
 		C2DE853F1ECC39CE00CE0951 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE853E1ECC39CE00CE0951 /* RootRouter.swift */; };
@@ -123,7 +122,6 @@
 		C22DF94D1ECCA24500C12259 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		C22DF94F1ECCA36B00C12259 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		C22DF9511ECCA40200C12259 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
-		C286E26E1ED82A4E003982C5 /* sunny.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sunny.mp4; sourceTree = "<group>"; };
 		C2BFDF8B1ECD7BD7001D712F /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		C2DE853B1ECC326C00CE0951 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C2DE853E1ECC39CE00CE0951 /* RootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
@@ -260,7 +258,6 @@
 		C22CFEF01ECC19BD008444EA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C286E26B1ED829D4003982C5 /* Videos */,
 				C2178A5D1ECBEC9600BD7D86 /* Assets.xcassets */,
 				C2178A5F1ECBEC9600BD7D86 /* LaunchScreen.storyboard */,
 				C2178A621ECBEC9600BD7D86 /* Info.plist */,
@@ -341,14 +338,6 @@
 				C2075A981ECCAEAE00A80AB5 /* MessageView.swift */,
 			);
 			name = Extensions;
-			sourceTree = "<group>";
-		};
-		C286E26B1ED829D4003982C5 /* Videos */ = {
-			isa = PBXGroup;
-			children = (
-				C286E26E1ED82A4E003982C5 /* sunny.mp4 */,
-			);
-			name = Videos;
 			sourceTree = "<group>";
 		};
 		C2DE85371ECC322900CE0951 /* Interactor */ = {
@@ -525,7 +514,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2178A611ECBEC9600BD7D86 /* LaunchScreen.storyboard in Resources */,
-				C286E26F1ED82A4E003982C5 /* sunny.mp4 in Resources */,
 				C2178A5E1ECBEC9600BD7D86 /* Assets.xcassets in Resources */,
 				C2DE853C1ECC326C00CE0951 /* Home.storyboard in Resources */,
 			);
