@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import MapKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var mapView: MKMapView!
     var presenter: HomePresentationProtocol!
     var searchActive : Bool = false
     var forecastData : ForecastData! {
@@ -65,7 +67,14 @@ extension HomeViewController: HomeViewProtocol {
         if(weatherData.main != nil) {
             self.labelTempreature.text = presenter.tempreatureInCelcius(kelvin: (weatherData.main?.temp)!)
             self.labelDescription.text = "Pressure: \((weatherData.main?.pressure)!) | Humidity: \((weatherData.main?.humidity)!) | Max: \(presenter.tempreatureInCelcius(kelvin: (weatherData.main?.temp_min)!)) | Min: \(presenter.tempreatureInCelcius(kelvin: (weatherData.main?.temp_min)!))"
+            
+            // Go to Location in Map
+            let regionRadius: CLLocationDistance = 3000
+            let location = CLLocation(latitude: (weatherData.coord?.lat)!, longitude: (weatherData.coord?.lon)!)
+            let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,regionRadius * 2.0, regionRadius * 2.0)
+            mapView.setRegion(coordinateRegion, animated: true)
         }
+
     }
     
     func displayForecastData(forecastData: ForecastData) {

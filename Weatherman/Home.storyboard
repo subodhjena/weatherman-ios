@@ -21,6 +21,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rc2-Vr-VW5">
+                                <rect key="frame" x="1" y="0.0" width="374" height="667"/>
+                            </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOC-EQ-R7f">
                                 <rect key="frame" x="128.5" y="94" width="117.5" height="29.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
@@ -41,7 +44,7 @@
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="83" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QGG-tF-Cs3">
                                 <rect key="frame" x="16" y="268.5" width="343" height="398.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ForecastCell" rowHeight="83" id="zug-Ye-QOO" customClass="ForecastTableViewCell" customModule="Weatherman" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="83"/>
@@ -94,6 +97,7 @@
                                                 <constraint firstAttribute="leadingMargin" secondItem="LHh-ej-Tse" secondAttribute="leading" id="pmr-kV-FmJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="labelAverageTemp" destination="LHh-ej-Tse" id="aLg-7y-Tcn"/>
                                             <outlet property="labelDateText" destination="mvK-zW-8Jc" id="vbp-Gf-70d"/>
@@ -115,14 +119,18 @@
                             <constraint firstItem="QGG-tF-Cs3" firstAttribute="trailing" secondItem="kbz-8R-KjZ" secondAttribute="trailingMargin" id="EDA-tR-g1q"/>
                             <constraint firstItem="QOC-EQ-R7f" firstAttribute="top" secondItem="ZpK-Tc-MMX" secondAttribute="bottom" constant="22" id="GDe-oZ-jsX"/>
                             <constraint firstItem="CCY-sV-GB7" firstAttribute="top" secondItem="QOC-EQ-R7f" secondAttribute="bottom" constant="8" id="Myn-np-kKf"/>
+                            <constraint firstItem="0gB-mh-fXx" firstAttribute="top" secondItem="rc2-Vr-VW5" secondAttribute="bottom" id="QDS-2D-X1F"/>
                             <constraint firstAttribute="trailing" secondItem="ZpK-Tc-MMX" secondAttribute="trailing" constant="-1" id="Qw3-Ms-Ypl"/>
+                            <constraint firstItem="rc2-Vr-VW5" firstAttribute="leading" secondItem="kbz-8R-KjZ" secondAttribute="leading" constant="1" id="YlD-45-BvH"/>
                             <constraint firstItem="CCY-sV-GB7" firstAttribute="centerX" secondItem="kbz-8R-KjZ" secondAttribute="centerX" id="bkx-0E-Gly"/>
                             <constraint firstItem="QGG-tF-Cs3" firstAttribute="top" secondItem="3Zy-oD-vdq" secondAttribute="bottom" constant="35" id="bvr-r0-gU0"/>
                             <constraint firstItem="3Zy-oD-vdq" firstAttribute="top" secondItem="CCY-sV-GB7" secondAttribute="bottom" constant="8" id="dbz-EQ-Yzn"/>
                             <constraint firstItem="3Zy-oD-vdq" firstAttribute="centerX" secondItem="kbz-8R-KjZ" secondAttribute="centerX" id="edj-4w-AKM"/>
                             <constraint firstItem="0gB-mh-fXx" firstAttribute="top" secondItem="QGG-tF-Cs3" secondAttribute="bottom" id="eoB-tu-rq9"/>
+                            <constraint firstAttribute="trailing" secondItem="rc2-Vr-VW5" secondAttribute="trailing" id="hEM-yx-dLJ"/>
                             <constraint firstItem="ZpK-Tc-MMX" firstAttribute="leading" secondItem="kbz-8R-KjZ" secondAttribute="leading" constant="1" id="iqs-CV-7OH"/>
                             <constraint firstItem="QGG-tF-Cs3" firstAttribute="leading" secondItem="kbz-8R-KjZ" secondAttribute="leadingMargin" id="jp9-4l-x1P"/>
+                            <constraint firstItem="rc2-Vr-VW5" firstAttribute="top" secondItem="kbz-8R-KjZ" secondAttribute="top" id="nw1-kx-1f5"/>
                             <constraint firstItem="QOC-EQ-R7f" firstAttribute="centerX" secondItem="kbz-8R-KjZ" secondAttribute="centerX" id="pif-vH-w9f"/>
                         </constraints>
                     </view>
@@ -130,6 +138,7 @@
                         <outlet property="labelCityName" destination="QOC-EQ-R7f" id="vQE-5K-dld"/>
                         <outlet property="labelDescription" destination="3Zy-oD-vdq" id="rAo-Ju-tct"/>
                         <outlet property="labelTempreature" destination="CCY-sV-GB7" id="VJF-kU-LPR"/>
+                        <outlet property="mapView" destination="rc2-Vr-VW5" id="G8a-S9-LP2"/>
                         <outlet property="searchBar" destination="ZpK-Tc-MMX" id="dfS-L0-82b"/>
                         <outlet property="tableForecast" destination="QGG-tF-Cs3" id="LZi-iG-dgt"/>
                     </connections>
